@@ -136,7 +136,7 @@
             </div>
             <div class="field" id="qr-url-field">
               <label for="qr-url">Poveznica za doniranje</label>
-              <input id="qr-url" type="url" maxlength="500" value="https://www.unicef.hr/donirajte" spellcheck="false" aria-describedby="qr-error">
+              <input id="qr-url" type="url" maxlength="500" value="https://donacije.unicef.hr/" spellcheck="false" aria-describedby="qr-error">
             </div>
             <div class="field" id="qr-file-field" hidden>
               <label for="qr-file">Učitaj ili zamijeni sliku QR koda</label>

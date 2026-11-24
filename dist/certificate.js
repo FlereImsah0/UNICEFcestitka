@@ -261,7 +261,7 @@
     const matrix = renderer._oQRCode.modules;
     const size = matrix.length + 8;
     const path = matrix.map((row, y) => row.map((dark, x) => dark ? 'M' + (x + 4) + ' ' + (y + 4) + 'h1v1h-1z' : '').join('')).join('');
-    const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + size * 10 + '" height="' + size * 10 + '" viewBox="0 0 ' + size + ' ' + size + '" shape-rendering="crispEdges"><path fill="#fff" d="M0 0h' + size + 'v' + size + 'H0z"/><path fill="#000" d="' + path + '"/></svg>';
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + size * 10 + '" height="' + size * 10 + '" viewBox="0 0 ' + size + ' ' + size + '" shape-rendering="crispEdges"><path fill="#fff" d="M0 0h' + size + 'v' + size + 'H0z"/><path fill="#00aeef" d="' + path + '"/></svg>';
     return 'data:image/svg+xml,' + encodeURIComponent(svg);
   }
 
