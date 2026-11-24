@@ -11,6 +11,7 @@
   const qrImage = find('.qr-paper img');
   const logo = find('.cert-logo img');
   const defaultLogo = logo.getAttribute('src');
+  const defaultLogoAlt = logo.alt;
   const exportButtons = [...document.querySelectorAll('[data-export]')];
 
   const formats = {
@@ -394,8 +395,10 @@
     field('logo-file').value = '';
     field('reset-logo').hidden = true;
     setText(field('logo-error'), '');
-    logo.alt = 'UNICEF, for every child';
+    logo.alt = defaultLogoAlt;
+    logo.parentElement.classList.remove('custom');
     displayImage(logo, defaultLogo);
+    fitCard();
   }
 
   async function uploadLogo() {
@@ -406,9 +409,11 @@
       const src = await readImage(file, ['png', 'svg']);
       if (revision !== logoRevision) return;
       logo.alt = 'Vlastiti logotip';
+      logo.parentElement.classList.add('custom');
       displayImage(logo, src);
       field('reset-logo').hidden = false;
       setText(field('logo-error'), '');
+      fitCard();
     } catch (error) {
       if (revision !== logoRevision) return;
       resetLogo();

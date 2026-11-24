@@ -196,7 +196,7 @@
                   <div class="qr-paper"><img alt="QR kod za doniranje"></div>
                   <div class="cert-qr-copy"><h3></h3><p></p></div>
                 </div>
-                <div class="cert-logo"><img src="assets/unicef-signature.svg" alt="UNICEF, for every child"></div>
+                <div class="cert-logo"><img src="assets/unicef-hr.png" alt="UNICEF – za svako dijete" width="1203" height="150"></div>
               </footer>
             </article>
           </div>
