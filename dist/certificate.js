@@ -180,7 +180,8 @@
 
   function fitStory() {
     const main = find('.cert-main');
-    const height = main.clientHeight - parseFloat(getComputedStyle(main).paddingTop);
+    const padding = getComputedStyle(main);
+    const height = main.clientHeight - parseFloat(padding.paddingTop) - parseFloat(padding.paddingBottom);
     story.style.setProperty('--fit', 1);
     if (story.offsetHeight > height) {
       let low = .55;

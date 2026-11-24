@@ -240,7 +240,7 @@ h1, h2, h3, p { margin: 0; }
 .cert-art { position: absolute; top: 3.7em; width: 16.3em; height: auto; }
 .cert-art.left { left: 4.8em; }
 .cert-art.right { right: 3.7em; }
-.cert-main { display: grid; place-items: center; min-width: 0; min-height: 0; text-align: center; }
+.cert-main { display: grid; place-items: center; min-width: 0; min-height: 0; padding-bottom: 2em; text-align: center; }
 .cert-story { display: grid; justify-items: center; width: 100%; min-width: 0; overflow-wrap: anywhere; font-size: calc(var(--unit) * var(--fit, 1)); }
 .cert-story > * { max-width: 100%; white-space: pre-wrap; }
 .cert-kicker { margin-bottom: .6em; font-size: 2.6em; font-weight: 750; letter-spacing: .12em; line-height: 1.25; }
@@ -252,7 +252,7 @@ h1, h2, h3, p { margin: 0; }
 .certificate.formal .cert-greeting { margin-top: .36em; font-size: 7.1em; }
 .cert-signature { margin-top: .55em; font-size: 2.7em; line-height: 1.25; font-weight: 700; }
 .cert-amount { margin-top: .7em; padding: .32em .65em; border: .06em solid #fff; border-radius: .27em; font-size: 2.75em; line-height: 1.25; font-weight: 700; }
-.cert-foot { display: grid; justify-items: center; gap: 2.9em; }
+.cert-foot { display: grid; justify-items: center; gap: 6em; }
 .cert-qr {
   display: flex;
   align-items: center;
@@ -272,11 +272,11 @@ h1, h2, h3, p { margin: 0; }
 .cert-logo.custom { width: 25.5em; height: 12.9em; }
 .cert-logo img { max-width: 100%; max-height: 100%; }
 .certificate.landscape { grid-template: minmax(0, 1fr) / minmax(0, 1fr) 42em; gap: 5em; padding: 6em; }
-.landscape .cert-main { padding-top: 12.5em; }
+.landscape .cert-main { padding-top: 10em; padding-bottom: 2.5em; }
 .landscape.plain .cert-main { padding-top: 0; }
-.landscape .cert-art.left { width: 12em; top: 3em; }
+.landscape .cert-art.left { width: 11em; top: 2.7em; }
 .landscape .cert-art.right { width: 17em; top: 4.5em; right: 18.5em; }
-.landscape .cert-foot { align-self: end; gap: 3.3em; }
+.landscape .cert-foot { align-self: end; }
 .landscape .cert-qr { justify-content: start; flex-direction: column; gap: 1.6em; padding: 2.1em 0 0; text-align: center; }
 .landscape .qr-paper { width: 16em; height: 16em; }
 .landscape .cert-qr h3 { font-size: 3.8em; }
