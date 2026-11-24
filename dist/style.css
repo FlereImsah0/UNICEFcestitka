@@ -230,7 +230,7 @@ h1, h2, h3, p { margin: 0; }
   gap: 2.2em;
   isolation: isolate;
   overflow: hidden;
-  padding: 22.4em 6em 4.7em;
+  padding: 26em 6em 4.7em;
   font-size: var(--unit);
   background: var(--blue);
   color: #fff;
@@ -240,11 +240,21 @@ h1, h2, h3, p { margin: 0; }
 .cert-art { position: absolute; top: 3.7em; width: 16.3em; height: auto; }
 .cert-art.left { left: 4.8em; }
 .cert-art.right { right: 3.7em; }
-.cert-main { display: grid; place-items: center; min-width: 0; min-height: 0; padding-bottom: 2em; text-align: center; }
+.cert-main {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  align-items: safe center;
+  justify-items: center;
+  min-width: 0;
+  min-height: 0;
+  padding-bottom: 2em;
+  overflow: hidden;
+  text-align: center;
+}
 .cert-story { display: grid; justify-items: center; width: 100%; min-width: 0; overflow-wrap: anywhere; font-size: calc(var(--unit) * var(--fit, 1)); }
 .cert-story > * { max-width: 100%; white-space: pre-wrap; }
 .cert-kicker { margin-bottom: .6em; font-size: 2.6em; font-weight: 750; letter-spacing: .12em; line-height: 1.25; }
-.cert-title { font-size: 7.2em; font-weight: 800; letter-spacing: -.035em; line-height: 1.12; }
+.cert-title { font-size: 6.65em; font-weight: 800; letter-spacing: -.035em; line-height: 1.12; }
 .cert-message { display: grid; gap: .83em; margin-top: .95em; width: 100%; max-width: 25em; font-size: 3.47em; font-weight: 400; line-height: 1.25; }
 .cert-message p { white-space: pre-wrap; }
 .certificate.warm .cert-message p:last-child { font-weight: 750; }
@@ -272,7 +282,7 @@ h1, h2, h3, p { margin: 0; }
 .cert-logo.custom { width: 25.5em; height: 12.9em; }
 .cert-logo img { max-width: 100%; max-height: 100%; }
 .certificate.landscape { grid-template: minmax(0, 1fr) / minmax(0, 1fr) 42em; gap: 5em; padding: 6em; }
-.landscape .cert-main { padding-top: 10em; padding-bottom: 2.5em; }
+.landscape .cert-main { padding-top: 11.7em; padding-bottom: 2.5em; }
 .landscape.plain .cert-main { padding-top: 0; }
 .landscape .cert-art.left { width: 11em; top: 2.7em; }
 .landscape .cert-art.right { width: 17em; top: 4.5em; right: 18.5em; }
@@ -281,7 +291,7 @@ h1, h2, h3, p { margin: 0; }
 .landscape .qr-paper { width: 16em; height: 16em; }
 .landscape .cert-qr h3 { font-size: 3.8em; }
 .landscape .cert-qr p { font-size: 3em; }
-.landscape .cert-title { font-size: 7.4em; }
+.landscape .cert-title { font-size: 6.9em; }
 .landscape .cert-message { font-size: 3.5em; }
 .landscape .cert-greeting { font-size: 11em; }
 .landscape.formal .cert-greeting { font-size: 6.5em; }
