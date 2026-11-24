@@ -1,0 +1,5 @@
+* text=auto
+dist/** text=auto eol=lf
+dist/assets/*.woff2 -text
+dist/assets/OFL-*.txt -text whitespace=-blank-at-eol
+dist/vendor/*.js -text whitespace=-blank-at-eol
