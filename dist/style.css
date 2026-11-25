@@ -124,6 +124,8 @@ h1, h2, h3, p { margin: 0; }
 .workspace { display: grid; grid-template-columns: minmax(20rem, 26rem) minmax(0, 1fr); min-height: 0; }
 .controls {
   padding: 1.5rem clamp(1rem, 2vw, 1.75rem);
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  scroll-padding-bottom: 5rem;
   border-right: 1px solid var(--line);
   background: #fff;
 }
@@ -134,6 +136,7 @@ h1, h2, h3, p { margin: 0; }
 .panel h3, .panel summary { display: flex; align-items: center; gap: .65rem; font-size: .975rem; font-weight: 750; }
 .panel h3 .icon, .panel summary .icon { width: 1.1rem; height: 1.1rem; color: var(--action); }
 .panel summary { cursor: pointer; list-style: none; min-height: 1.5rem; }
+.controls > .panel:last-child > summary { min-height: 2.75rem; }
 .panel summary::-webkit-details-marker { display: none; }
 .panel summary::after {
   content: '';
@@ -269,7 +272,6 @@ h1, h2, h3, p { margin: 0; }
   justify-content: center;
   width: 100%;
   gap: 3.4em;
-  border-top: .18em solid #fff;
   padding: 3.2em 3.5em 0;
 }
 .qr-paper { flex: none; width: 17em; height: 17em; display: grid; place-items: center; overflow: hidden; background: #fff; }
