@@ -288,7 +288,7 @@ h1, h2, h3, p { margin: 0; }
 .landscape.plain .cert-main { padding-top: 0; }
 .landscape .cert-art.left { width: 11em; top: 2.7em; }
 .landscape .cert-art.right { width: 17em; top: 4.5em; right: 18.5em; }
-.landscape .cert-foot { align-self: end; }
+.landscape .cert-foot { align-self: end; gap: 9em; }
 .landscape .cert-qr { justify-content: start; flex-direction: column; gap: 1.6em; padding: 2.1em 0 0; text-align: center; }
 .landscape .qr-paper { width: 16em; height: 16em; }
 .landscape .cert-qr h3 { font-size: 3.8em; }
